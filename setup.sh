@@ -5,6 +5,8 @@ files=(
   ".aliases"
   ".gitconfig"
   ".vimrc"
+  ".tigrc"
+  ".tigrc.vim"
 )
 
 for file in "${files[@]}"; do
