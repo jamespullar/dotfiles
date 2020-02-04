@@ -17,6 +17,7 @@ alias hla="cd ~/dev/hearsay-login-android"
 ###########
 
 alias gw="./gradlew"
+alias spot="gw spotlessApply"
 
 ###########
 # Git 
