@@ -5,6 +5,14 @@
 alias ll="ls -al"
 
 ###########
+# Hearsay 
+###########
+
+alias ha="cd ~/dev/hearsay-android"
+alias hma="cd ~/dev/hearsay-messages-android"
+alias hla="cd ~/dev/hearsay-login-android"
+
+###########
 # Android 
 ###########
 
