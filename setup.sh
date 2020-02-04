@@ -1,4 +1,4 @@
-# Run this script to create sumlinks for dotfiles
+# Run this script to create symlinks for dotfiles
 
 files=(
   ".zshrc"
