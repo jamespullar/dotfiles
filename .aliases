@@ -1,0 +1,19 @@
+###########
+# System 
+###########
+
+alias ll="ls -al"
+
+###########
+# Android 
+###########
+
+alias gw="./gradlew"
+
+###########
+# Git 
+###########
+
+alias ga.="git add ."
+alias gcm="git commit --message"
+alias gst="git status"

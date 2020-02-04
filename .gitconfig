@@ -1,0 +1,19 @@
+[user]
+	name = James Pullar
+	email = jpullar@hearsaycorp.com
+	username = jamespullar
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+
+[web]
+	browser = firefox
+
+[color]
+	ui = auto
+
+[alias]
+	br = branch -vv
+	st = status
+	cm = commit -m
