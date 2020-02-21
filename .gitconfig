@@ -16,4 +16,6 @@
 [alias]
 	br = branch -vv
 	st = status
-	cm = commit -m
+	co = checkout
+	cm = commit --message
+	edit = commit --amend --no-edit

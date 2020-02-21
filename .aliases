@@ -3,6 +3,7 @@
 ###########
 
 alias ll="ls -al"
+alias please="sudo !!"
 
 ###########
 # Hearsay 
@@ -11,6 +12,8 @@ alias ll="ls -al"
 alias ha="cd ~/dev/hearsay-android"
 alias hma="cd ~/dev/hearsay-messages-android"
 alias hla="cd ~/dev/hearsay-login-android"
+
+alias hmi="cd ~/dev/hearsay-messages-ios"
 
 ###########
 # Android 
@@ -24,5 +27,6 @@ alias spot="gw spotlessApply"
 ###########
 
 alias ga.="git add ."
+alias gco="git checkout"
 alias gcm="git commit --message"
 alias gst="git status"
