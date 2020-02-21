@@ -7,3 +7,6 @@ export CLICOLOR=1 # enables color output for ls
 
 # aliases
 source ~/.aliases
+# android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
