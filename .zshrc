@@ -2,11 +2,15 @@
 source  ~/dev/powerlevel9k/powerlevel9k.zsh-theme
 POWERLEVEL9K_MODE='nerdfont-complete'
 
+# Enable tab completion
+autoload -Uz compinit && compinit
+
 # terminal
 export CLICOLOR=1 # enables color output for ls
 
 # aliases
 source ~/.aliases
+
 # android
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
