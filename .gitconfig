@@ -19,3 +19,4 @@
 	co = checkout
 	cm = commit --message
 	edit = commit --amend --no-edit
+	up = !git fetch upstream && git rebase upstream/$(git rev-parse --abbrev-ref HEAD) && git push origin $(git rev-parse --abbrev-ref HEAD)

@@ -4,6 +4,7 @@
 
 alias ll="ls -al"
 alias please="sudo !!"
+alias top="htop"
 
 ###########
 # Hearsay 
