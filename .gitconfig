@@ -14,7 +14,7 @@
 	ui = auto
 
 [alias]
-	br = branch -vv
+	br = branch -vv --sort=-committerdate
 	st = status
 	co = checkout
 	cm = commit --message
