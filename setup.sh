@@ -7,6 +7,7 @@ files=(
   ".vimrc"
   ".tigrc"
   ".tigrc.vim"
+  ".tmux.conf"
 )
 
 for file in "${files[@]}"; do
