@@ -27,6 +27,11 @@ source ~/.aliases
 # PATH
 #
 
+export DEV_HOME=$HOME/dev
+
+# Custom scripts
+export PATH=$PATH:$DEV_HOME/dotfiles/bin
+
 # Android
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd ~/dev/notes;
+
+tmux \
+    new -s 'notes' \; \
+    split-window -v \; \
+    resize-pane -D 15 \; \
+    send-keys -t . "vim ~/dev/notes/todo.md" ENTER \; \
+    select-pane -U
