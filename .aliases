@@ -31,7 +31,6 @@ alias ga.="git add ."
 alias gbr="git branch -vv --sort=-committerdate"
 alias gco="git checkout"
 alias gcm="git commit --message"
-alias ge="git commit --amend --no-edit"
 alias gst="git status"
 
 ###########
