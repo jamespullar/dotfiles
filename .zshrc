@@ -3,6 +3,7 @@
 #
 
 export TERM="xterm-256color"
+export EDITOR="vim"
 
 # Install and configure powerlevel9k
 source ~/dev/powerlevel10k/powerlevel10k.zsh-theme

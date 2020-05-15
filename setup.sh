@@ -8,6 +8,8 @@ files=(
   ".tigrc"
   ".tigrc.vim"
   ".tmux.conf"
+  ".yabairc"
+  ".skhdrc"
 )
 
 for file in "${files[@]}"; do

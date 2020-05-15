@@ -1,0 +1,6 @@
+# toggle window native fullscreen
+shift + alt - f : yabai -m window --toggle native-fullscreen
+
+# change layout of desktop
+shift + alt - a : yabai -m space --layout bsp
+shift + alt - d : yabai -m space --layout float

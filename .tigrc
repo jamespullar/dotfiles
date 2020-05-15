@@ -1,2 +1,9 @@
 # Enable vim bindings
 source ~/.tigrc.vim
+
+# View settings
+set main-view   = line-number:no,interval:5 id:no date:relative-compact author:full commit-title:yes,graph,refs,overflow=no
+
+# Other settings
+set refresh-mode        = auto
+set refresh-interval    = 10

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+SESSIONNAME="work"
+tmux has-session -t $SESSIONNAME &> /dev/null
+
+if [ $? != 0 ]
+  then
+    tmux new-session -s $SESSIONNAME -n work -d
+
+    tmux \
+        new -s 'notes' \; \
+        split-window -v \; \
+        resize-pane -D 15 \; \
+        send-keys -t . "vim ~/dev/notes/todo.md" ENTER \; \
+        select-pane -U
+fi
+
+tmux attach -t $SESSIONNAME
