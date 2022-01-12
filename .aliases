@@ -2,9 +2,15 @@
 # System 
 ###########
 
-alias ll="ls -al"
+# exa replaces ls
+# https://github.com/ogham/exa
+alias ls="exa -l"
+alias ll="exa -al"
+
 alias please="sudo !!"
 alias top="htop"
+alias dev="cd ~/dev"
+alias mux="tmuxinator"
 
 ###########
 # Hearsay 
@@ -16,12 +22,18 @@ alias hla="cd ~/dev/hearsay-login-android"
 
 alias hmi="cd ~/dev/hearsay-messages-ios"
 
+alias ghost="./ghost.sh"
+
 ###########
 # Android 
 ###########
 
 alias gw="./gradlew"
+alias fl="bundle exec fastlane"
+alias fastlane="bundle exec fastlane"
 alias spot="gw spotlessApply"
+alias scrcpy="scrcpy --show-touches --max-size 1024 --stay-awake &"
+alias screencap="adb exec-out screencap -p > `gdate +Screenshot_%s.%3N.png`"
 
 ###########
 # Git 

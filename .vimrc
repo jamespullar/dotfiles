@@ -1,6 +1,9 @@
 colorscheme darcula
 set termguicolors
 
+" Enable filetype plugins available in ~/.vim/ftplugins
+filetype plugin on
+
 set number " Line number
 syntax on " Syntax highlighting
 set cursorline " Highlight current line

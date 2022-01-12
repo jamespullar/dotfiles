@@ -10,6 +10,7 @@ files=(
   ".tmux.conf"
   ".yabairc"
   ".skhdrc"
+  ".tridactylrc"
 )
 
 for file in "${files[@]}"; do

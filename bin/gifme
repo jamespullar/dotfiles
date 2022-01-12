@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+videoInput=$1
+
+echo $videoInput
+
+filename=$(echo "$videoInput" | cut -f 1 -d '.')
+
+echo "Converting $filename to gif..."
+
+convert -size 704x480 -background SteelBlue1 -fill black -font Helvetica -pointsize 72 -gravity center label:[Video Title] titlecard.jpg
+
+ffmpeg -i $videoInput -vf fps=15,smartblur=ls=-0.5 "$filename.gif"
+

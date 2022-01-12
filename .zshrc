@@ -2,6 +2,10 @@
 # ZSH Config
 #
 
+export PATH=$PATH:$HOME/.rbenv/bin:/usr/local/bin:$HOME/.bin
+eval "$(rbenv init -)"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+
 export TERM="xterm-256color"
 export EDITOR="vim"
 
@@ -45,3 +49,15 @@ export PATH=$PATH:$DEV_HOME/dotfiles/bin
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jpullar/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jpullar/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jpullar/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jpullar/google-cloud-sdk/completion.zsh.inc'; fi
+
+#
+# On Start
+#
+
+# Show a random, colorful quote on opening a new terminal
+fortune | cowsay | lolcat

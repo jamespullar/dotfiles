@@ -1,0 +1,20 @@
+" tridactyl config
+" https://github.com/tridactyl/tridactyl
+
+" Set dark theme
+colors dark
+
+" Tridactyl doesn't support using Firefox home page
+set newtab about:blank
+
+" Set default search engine
+set searchengine duckduckgo
+
+" So smoooooooth
+set smoothscroll true
+
+" Allow closing tabs using x
+bind x tabclose
+
+" Disable opening help with F1 to work with Tree Style Tabs
+unbind <F1>

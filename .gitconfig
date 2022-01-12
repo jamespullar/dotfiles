@@ -20,3 +20,5 @@
 	cm = commit --message
 	amend = commit --amend --no-edit
 	up = !git fetch upstream && git rebase upstream/$(git rev-parse --abbrev-ref HEAD) && git push origin $(git rev-parse --abbrev-ref HEAD)
+    wip = commit -am "WIP"
+    unwip = !git log -n 1 | grep -q -c "WIP" && git reset HEAD~1
