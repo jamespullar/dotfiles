@@ -11,6 +11,7 @@ alias please="sudo !!"
 alias top="htop"
 alias dev="cd ~/dev"
 alias mux="tmuxinator"
+alias vim="nvim"
 
 ###########
 # Hearsay 
@@ -24,6 +25,8 @@ alias hmi="cd ~/dev/hearsay-messages-ios"
 
 alias ghost="./ghost.sh"
 
+alias notes="cd ~/dev/notes"
+
 ###########
 # Android 
 ###########
@@ -32,7 +35,7 @@ alias gw="./gradlew"
 alias fl="bundle exec fastlane"
 alias fastlane="bundle exec fastlane"
 alias spot="gw spotlessApply"
-alias scrcpy="scrcpy --show-touches --max-size 1024 --stay-awake &"
+alias scrcpy="scrcpy --show-touches --forward-all-clicks --max-size 1024 --stay-awake --window-title=scrcpy &"
 alias screencap="adb exec-out screencap -p > `gdate +Screenshot_%s.%3N.png`"
 
 ###########
@@ -50,3 +53,9 @@ alias gst="git status"
 ###########
 
 alias python=python3
+
+###########
+# Kitty 
+###########
+
+alias icat="kitty +kitten icat"

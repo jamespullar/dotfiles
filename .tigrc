@@ -2,7 +2,11 @@
 source ~/.tigrc.vim
 
 # View settings
-set main-view   = line-number:no,interval:5 id:no date:relative-compact author:full commit-title:yes,graph,refs,overflow=no
+set main-view  = line-number:no,interval:5 id:no date:relative-compact author:full commit-title:yes,graph,refs,overflow=no
+
+# set blame-view = date:default author:full file-name:auto id:yes, color line-number:yes,interval=1 text
+
+# set blob-view = line-number:yes,interval=1 text
 
 # Other settings
 set refresh-mode        = auto

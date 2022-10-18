@@ -1,6 +1,9 @@
 " tridactyl config
 " https://github.com/tridactyl/tridactyl
 
+" Set vim as editor of choice
+set editorcmd /usr/local/bin/vimr --wait
+
 " Set dark theme
 colors dark
 
