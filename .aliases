@@ -2,10 +2,16 @@
 # System 
 ###########
 
+alias cd..="cd .."
+
 # exa replaces ls
 # https://github.com/ogham/exa
-alias ls="exa -l"
+alias ls="exa"
 alias ll="exa -al"
+
+# bat replaces cat
+# https://github.com/sharkdp/bat
+alias cat="bat"
 
 alias please="sudo !!"
 alias top="htop"
@@ -34,19 +40,25 @@ alias notes="cd ~/dev/notes"
 alias gw="./gradlew"
 alias fl="bundle exec fastlane"
 alias fastlane="bundle exec fastlane"
-alias spot="gw spotlessApply"
+alias format="./gradlew ktfmtFormat"
 alias scrcpy="scrcpy --show-touches --forward-all-clicks --max-size 1024 --stay-awake --window-title=scrcpy &"
-alias screencap="adb exec-out screencap -p > `gdate +Screenshot_%s.%3N.png`"
 
 ###########
 # Git 
 ###########
 
+alias gup="git up"
 alias ga.="git add ."
 alias gbr="git branch -vv --sort=-committerdate"
 alias gco="git checkout"
+alias gc-="git checkout -"
 alias gcm="git commit --message"
 alias gst="git status"
+
+alias gr-="git rebase -"
+alias grc="git rebase --continue"
+alias grs="git rebase --skip"
+alias gra="git rebase --abort"
 
 ###########
 # Python 
@@ -59,3 +71,10 @@ alias python=python3
 ###########
 
 alias icat="kitty +kitten icat"
+alias themes="cd ~/.config/kitty/themes && fzf --preview 'head -n 40 {} && kitty @ --to unix:/tmp/kitty set-colors -a -c {}'; cd -"
+
+###########
+# Misc
+###########
+
+alias weather="curl wttr.in/Portland\?m"

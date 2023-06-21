@@ -4,7 +4,7 @@ set termguicolors
 " Enable filetype plugins available in ~/.vim/ftplugins
 filetype plugin on
 
-set number " Line number
+" set number relativenumber" Show hybrid relative line number and current actual line number
 syntax on " Syntax highlighting
 set cursorline " Highlight current line
 

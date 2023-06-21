@@ -1,8 +1,14 @@
 " tridactyl config
 " https://github.com/tridactyl/tridactyl
 
-" Set vim as editor of choice
-set editorcmd /usr/local/bin/vimr --wait
+" Set vimr as editor of choice
+" set editorcmd /Applications/VimR.app/Contents/Resources/vimr --wait
+
+set editorcmd kitty --class floatingAppFocus -- nvim -c "set noshowmode | set noruler | set laststatus=0 | set noshowcmd | set cmdheight=1" %f
+" set editorcmd /Applications/kitty.app/Contents/MacOS/kitty -- nvim %f
+
+" Auto launch editor on text field focus using gi
+bind --mode=normal gi composite focusinput -l | editor
 
 " Set dark theme
 colors dark
