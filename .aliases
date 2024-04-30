@@ -1,4 +1,4 @@
-###########
+##########
 # System 
 ###########
 
@@ -38,8 +38,8 @@ alias notes="cd ~/dev/notes"
 ###########
 
 alias gw="./gradlew"
-alias fl="bundle exec fastlane"
-alias fastlane="bundle exec fastlane"
+# alias fl="bundle exec fastlane"
+# alias fastlane="bundle exec fastlane"
 alias format="./gradlew ktfmtFormat"
 alias scrcpy="scrcpy --show-touches --forward-all-clicks --max-size 1024 --stay-awake --window-title=scrcpy &"
 

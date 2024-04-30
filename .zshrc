@@ -2,7 +2,8 @@
 # ZSH Config
 #
 
-export PATH=$PATH:$HOME/.rbenv/bin:/usr/local/bin:$HOME/.bin
+# export PATH=$PATH:$HOME/.rbenv/bin:/usr/local/bin:$HOME/.bin
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
@@ -32,6 +33,9 @@ bindkey -v
 # Enable fzf
 # https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Enable Fastlane autocompletion
+. ~/.fastlane/completions/completion.sh
 
 # Aliases
 source ~/.aliases

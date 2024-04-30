@@ -7,6 +7,18 @@
 	editor = nvim
 	excludesfile = ~/.gitignore
 
+[diff]
+  tool = difftastic
+
+[difftool]
+  prompt = false
+
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+  difftool = true
+
 [web]
 	browser = firefox
 
@@ -22,7 +34,7 @@
     # Fork strategy
 	# up = !git fetch upstream && git rebase upstream/$(git rev-parse --abbrev-ref HEAD) && git push origin $(git rev-parse --abbrev-ref HEAD)
     # Branch strategy
-    up = !git fetch origin && git pull
-    pr = "!f() { git fetch upstream pull/$1/head:pr$1 && git checkout pr$1; }; f"
-    wip = commit -am "WIP"
-    unwip = !git log -n 1 | grep -q -c "WIP" && git reset HEAD~1
+  up = !git fetch origin && git pull
+  pr = "!f() { git fetch upstream pull/$1/head:pr$1 && git checkout pr$1; }; f"
+  wip = commit -am "WIP"
+  unwip = !git log -n 1 | grep -q -c "WIP" && git reset HEAD~1
