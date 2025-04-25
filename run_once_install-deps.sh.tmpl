@@ -1,0 +1,49 @@
+#!/bin/sh
+
+set -e
+
+# Detect OS
+OS="$(uname -s)"
+
+PACKAGES="
+zsh
+kitty
+nvim
+hyprland
+hyprlock
+hyprpaper
+waybar
+starship
+"
+
+PKG_LIST=$(echo "$PACKAGES" | xargs)
+
+install_with_apt() {
+    echo "Using apt..."
+    sudo apt update
+    sudo apt install -y $PKG_LIST
+}
+
+install_with_pacman() {
+    echo "Using pacman..."
+    sudo pacman -Sy $PKG_LIST
+}
+
+case "$OS" in
+    Linux)
+        echo "Detected Linux. Checking for package manager..."
+
+        if command -v apt >/dev/null 2>&1; then
+            install_with_apt
+        elif command -v pacman >/dev/null 2>&1; then
+	    install_with_pacman
+        else
+            echo "No supported package manager found (apt or pacman)."
+            exit 1
+        fi
+        ;;
+    *)
+        echo "Unsupported OS: $OS"
+        exit 1
+        ;;
+esac
