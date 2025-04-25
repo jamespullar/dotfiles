@@ -1,4 +1,4 @@
-##########
+###########
 # System 
 ###########
 
@@ -24,7 +24,9 @@ alias vim="nvim"
 
 alias dev="cd ~/dev"
 
-########### Git ##########
+###########
+# Git 
+###########
 
 alias gup="git up"
 alias ga.="git add ."
