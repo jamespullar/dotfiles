@@ -14,6 +14,7 @@ alias cd..="cd .."
 # https://github.com/ogham/exa
 alias ls="eza"
 alias ll="eza -al"
+alias tree="eza --tree"
 
 # bat replaces cat
 # https://github.com/sharkdp/bat
