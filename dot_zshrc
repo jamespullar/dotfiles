@@ -1,0 +1,14 @@
+#
+# .zshrc
+# by james pullar
+#
+
+export EDITOR="/usr/bin/nvim"
+
+# Starship
+# https://starship.rs/
+eval "$(starship init zsh)"
+
+# Aliases
+source ~/.aliases
+

@@ -1,0 +1,137 @@
+@import "mocha.css"; 
+
+* {
+  font-size: 15px;
+  font-family: "Comic Mono", "Symbols Nerd Font Mono";
+  background: none;
+}
+
+window#waybar {
+  background: @bg-alt-transparent;
+  color: @text;
+}
+
+#workspaces button {
+  border: 0;
+}
+
+#taskbar button.active {
+  background-color: @highlight;
+}
+
+#workspaces button.active {
+  border-bottom: 5px solid @highlight;
+}
+
+#custom-new-workspace {
+  font-size: 15px;
+}
+#custom-new-workspace:hover {
+  background-color: red;
+}
+
+#pulseaudio.on.active {
+  background-color: @highlight;
+}
+
+@keyframes blink-critical {
+  40% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  to {
+    background-color: @critical;
+  }
+}
+
+#pulseaudio.sink.muted {
+  color: @text;
+  background-color: @warning;
+}
+
+#pulseaudio.source.source-muted {
+  color: @text;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: blink-critical;
+  animation-duration: 0.5s;
+}
+
+#tray * {
+  margin: 5px;
+  color: red;
+}
+
+#custom-right-arrow,
+#custom-left-arrow {
+  padding: 8px 1px 1px 1px;
+  color: #bbffbb;
+}
+#custom-right-arrow,
+#custom-left-arrow,
+#custom-separator {
+  color: @highlight-dark;
+}
+
+#temperature,
+#cpu,
+#memory,
+#disk {
+  padding: 3px 8px;
+}
+
+#network {
+  font-size: 15;
+}
+
+#custom-playerctl {
+  font-size: 15px;
+}
+
+#pulseaudio.source {
+  font-size: 20px;
+}
+
+#custom-playerctl,
+#custom-new-workspace,
+#pulseaudio.source,
+#pulseaudio.sink,
+#network,
+#custom-notification,
+#yt-music,
+#workspaces button,
+#tray,
+#battery,
+#bluetooth,
+#clock,
+#battery,
+#taskbar {
+  padding: 3px 12px;
+  color: @text;
+}
+
+#network.disconnected,
+#battery.critical {
+  color: @critical;
+}
+#battery.charging {
+  color: @highlight;
+}
+
+.warning,
+.medium {
+  color: @warning;
+}
+
+.critical,
+.wtf {
+  color: @text;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: blink-critical;
+  animation-duration: 0.5s;
+}
+
+.high {
+  color: @critical;
+}

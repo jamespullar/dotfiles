@@ -1,0 +1,65 @@
+##########
+# System 
+###########
+
+alias sudo="sudo "
+alias please="sudo !!"
+
+# safer rm
+alias rm="rm -i"
+
+alias cd..="cd .."
+
+# exa replaces ls
+# https://github.com/ogham/exa
+alias ls="eza"
+alias ll="eza -al"
+
+# bat replaces cat
+# https://github.com/sharkdp/bat
+alias cat="bat"
+
+alias top="htop"
+alias vim="nvim"
+
+alias dev="cd ~/dev"
+
+########### Git ##########
+
+alias gup="git up"
+alias ga.="git add ."
+alias gbr="git branch -vv --sort=-committerdate"
+alias gco="git checkout"
+alias gc-="git checkout -"
+alias gcm="git commit --message"
+alias gst="git status"
+
+alias gr-="git rebase -"
+alias grc="git rebase --continue"
+alias grs="git rebase --skip"
+alias gra="git rebase --abort"
+
+###########
+# Kitty 
+###########
+
+alias icat="kitty +kitten icat"
+
+###########
+# Go
+###########
+
+alias air="$(go env GOPATH)/bin/air"
+
+###########
+# MakeMKV
+###########
+
+alias makemkv="QT_STYLE_OVERRIDE=kvantum KVANTUM_THEME=Arc makemkv"
+
+###########
+# Misc
+###########
+
+alias weather="curl wttr.in/Portland\?m"
+

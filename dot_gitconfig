@@ -1,0 +1,21 @@
+[user]
+	name = James Pullar
+	email = james@pullar.me
+	username = jamespullar
+
+[core]
+	editor = nvim
+	excludesfile = ~/.gitignore
+
+[init]
+	defaultBranch = main
+
+[fetch]
+	prune = true
+
+[color]
+	ui = auto
+
+[alias]
+	wip = !git commit -am "WIP"
+	unwip = !git log -n 1 | grep -q -c "WIP" && git reset HEAD~1

@@ -1,0 +1,9 @@
+@define-color bg #263238;
+@define-color bg-transparent rgba(38,50,56,0.5);
+@define-color bg-alt #192227;
+@define-color bg-alt-transparent rgba(25, 34, 39, 0.7);
+@define-color text #ffffff;
+@define-color warning #cc7a00;
+@define-color critical #BF616A;
+@define-color highlight #BD93f9;
+@define-color highlight-dark #8db946;
