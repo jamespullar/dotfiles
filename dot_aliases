@@ -59,9 +59,3 @@ alias air="$(go env GOPATH)/bin/air"
 
 alias makemkv="QT_STYLE_OVERRIDE=kvantum KVANTUM_THEME=Arc makemkv"
 
-###########
-# Misc
-###########
-
-alias weather="curl wttr.in/Portland\?m"
-
