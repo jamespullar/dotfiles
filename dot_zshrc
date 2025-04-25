@@ -11,7 +11,3 @@ source ~/.aliases
 # Starship
 # https://starship.rs/
 eval "$(starship init zsh)"
-
-# zoxide
-# https://github.com/ajeetdsouza/zoxide
-eval "$(zoxide init zsh)"
