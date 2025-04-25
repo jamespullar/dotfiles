@@ -25,10 +25,6 @@ alias vim="nvim"
 
 alias dev="cd ~/dev"
 
-# zoxide
-# https://github.com/ajeetdsouza/zoxide
-alias z="zoxide"
-
 ###########
 # Git 
 ###########
