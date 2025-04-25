@@ -10,8 +10,8 @@ alias rm="rm -i"
 
 alias cd..="cd .."
 
-# exa replaces ls
-# https://github.com/ogham/exa
+# eza replaces ls
+# https://github.com/eza-community/eza
 alias ls="eza"
 alias ll="eza -al"
 alias tree="eza --tree"
