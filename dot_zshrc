@@ -11,3 +11,4 @@ source ~/.aliases
 # Starship
 # https://starship.rs/
 eval "$(starship init zsh)"
+
