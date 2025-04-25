@@ -5,10 +5,13 @@
 
 export EDITOR="/usr/bin/nvim"
 
+# Aliases
+source ~/.aliases
+
 # Starship
 # https://starship.rs/
 eval "$(starship init zsh)"
 
-# Aliases
-source ~/.aliases
-
+# zoxide
+# https://github.com/ajeetdsouza/zoxide
+eval "$(zoxide init zsh)"
