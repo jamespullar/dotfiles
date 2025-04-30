@@ -14,7 +14,13 @@
 	prune = true
 
 [color]
-	ui = auto
+	ui = true
+	pager = true
+	status = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+
 
 [alias]
 	wip = !git commit -am "WIP"
