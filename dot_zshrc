@@ -5,10 +5,18 @@
 
 export EDITOR="/usr/bin/nvim"
 
+autoload -Uz compinit
+compinit
+
 # Aliases
 source ~/.aliases
 
 # Starship
 # https://starship.rs/
 eval "$(starship init zsh)"
+
+# fzf
+# https://github.com/junegunn/fzf
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
 
