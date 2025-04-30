@@ -8,7 +8,7 @@ Currently configured for Arch+Hyprland.
 
 On a fresh machine:
 ```
-GITHUB_USERNAME=jamespullar sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:jamespullar/dotfiles.git
 ```
 This will install chezmoi and my collection of dotfiles.
 
