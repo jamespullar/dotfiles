@@ -1,0 +1,6 @@
+#
+# .zprofile
+#
+
+# Auto run Hyprland on login for tty1
+[[ $(tty) == /dev/tty1 ]] && exec hyprland
