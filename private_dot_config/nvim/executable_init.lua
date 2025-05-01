@@ -3,9 +3,6 @@
   by james pullar
 ]]
 
-
-vim.opt.number = true
-vim.opt.relativenumber = true
-
-vim.opt.syntax = "on"
-vim.opt.termguicolors = true
+require("config.settings")
+require("config.bindings")
+require("config.lazy")
