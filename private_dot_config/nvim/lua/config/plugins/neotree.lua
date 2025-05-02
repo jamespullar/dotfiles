@@ -7,5 +7,20 @@ return {
         "MunifTanjim/nui.nvim",
         "3rd/image.nvim", -- Image support in preview window: See `# Preview Mode` for more information
     },
+    config = function()
+      require("neo-tree").setup({
+        window = {
+          mappings = {
+            ["P"] = {
+              "toggle_preview",
+              config = {
+                use_float = false,
+                use_image_nvim = true,
+              },
+            },
+          }
+        }
+      })
+    end,
 }
 
