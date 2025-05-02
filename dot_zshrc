@@ -11,6 +11,18 @@ compinit
 # Aliases
 source ~/.aliases
 
+export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [ ! -d "$ZINIT_HOME" ]; then
+  mkdir -p "$(dirname $ZINIT_HOME)"
+  git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+
+# Load zinit
+source "${ZINIT_HOME}/zinit.zsh"
+
+# zsh plugins
+zinit light zsh-users/zsh-syntax-highlighting
+
 # Starship
 # https://starship.rs/
 eval "$(starship init zsh)"
@@ -19,4 +31,17 @@ eval "$(starship init zsh)"
 # https://github.com/junegunn/fzf
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+
+# History
+HISTSIZE=5000
+HISTFILE="$HOME/.zsh_history"
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt INC_APPEND_HISTORY     # Write to history file immediately
+setopt HIST_SAVE_NO_DUPS      # Do not write a duplicate event to the history file
+setopt HIST_IGNORE_DUPS       # Do not record an event that was just recorded again
+setopt HIST_IGNORE_ALL_DUPS   # Delete an old recorded event if a new event is a duplicate
+setopt HIST_FIND_NO_DUPS      # Do not display a previously found event
+setopt HIST_VERIFY            # Do not execute immediately upon history expansion
 
