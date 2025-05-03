@@ -4,3 +4,8 @@
 
 # Auto run Hyprland on login for tty1
 [[ $(tty) == /dev/tty1 ]] && exec hyprland
+
+# Start keychain
+/usr/bin/keychain --quiet $HOME/.ssh/id_ed25519
+source $HOME/.keychain/$HOST-sh
+

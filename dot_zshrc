@@ -8,6 +8,7 @@ export EDITOR="/usr/bin/nvim"
 # Aliases
 source ~/.aliases
 
+
 # Configure zinit
 # https://github.com/zdharma-continuum/zinit
 export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
