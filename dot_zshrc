@@ -5,12 +5,11 @@
 
 export EDITOR="/usr/bin/nvim"
 
-autoload -Uz compinit
-compinit
-
 # Aliases
 source ~/.aliases
 
+# Configure zinit
+# https://github.com/zdharma-continuum/zinit
 export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 if [ ! -d "$ZINIT_HOME" ]; then
   mkdir -p "$(dirname $ZINIT_HOME)"
@@ -22,15 +21,24 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
+zinit light Aloxaf/fzf-tab
+
+
+# Load completion
+autoload -Uz compinit && compinit
+zinit cdreplay -q
+
 
 # Starship
 # https://starship.rs/
 eval "$(starship init zsh)"
 
-# fzf
-# https://github.com/junegunn/fzf
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+
+# Key bindings
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
 
 
 # History
@@ -44,4 +52,16 @@ setopt HIST_IGNORE_DUPS       # Do not record an event that was just recorded ag
 setopt HIST_IGNORE_ALL_DUPS   # Delete an old recorded event if a new event is a duplicate
 setopt HIST_FIND_NO_DUPS      # Do not display a previously found event
 setopt HIST_VERIFY            # Do not execute immediately upon history expansion
+
+
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # Case insensitive completion
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls $realpath'
+
+
+# Configure fzf
+# https://github.com/junegunn/fzf
+eval "$(fzf --zsh)"
 
