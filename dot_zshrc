@@ -66,6 +66,10 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls $realpath'
 path+=('$HOME/.nix-profile/bin')
 
 
+# Go
+path+=("$(go env GOPATH)/bin")
+
+
 # Configure fzf
 # https://github.com/junegunn/fzf
 eval "$(fzf --zsh)"
