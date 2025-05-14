@@ -65,7 +65,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls $realpath'
 
 
 # Nix
-path+=('$HOME/.nix-profile/bin')
+path+=("$HOME/.nix-profile/bin")
 
 
 # Go
@@ -73,7 +73,7 @@ path+=("$(go env GOPATH)/bin")
 
 
 # .local/bin
-path+=('$HOME/.local/bin')
+path+=("$(HOME)/.local/bin")
 
 
 # Configure fzf
