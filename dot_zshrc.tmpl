@@ -4,7 +4,7 @@
 #
 
 {{ if ne .chezmoi.os "darwin" }}
-export EDITOR="/usr/homebrew/"
+export EDITOR="/opt/homebrew/bin/nvim"
 {{ end }}
 {{ if ne .chezmoi.os "linux" }}
 export EDITOR="/usr/bin/nvim"
