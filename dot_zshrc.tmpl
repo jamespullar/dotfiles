@@ -76,6 +76,10 @@ path+=('$HOME/.nix-profile/bin')
 path+=("$(go env GOPATH)/bin")
 
 
+# .local/bin
+path+=('$HOME/.local/bin')
+
+
 # Configure fzf
 # https://github.com/junegunn/fzf
 eval "$(fzf --zsh)"
