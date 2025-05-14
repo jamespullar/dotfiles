@@ -4,9 +4,7 @@
 #
 
 
-export EDITOR="/opt/homebrew/bin/nvim"
-
-
+export EDITOR="/usr/bin/nvim"
 
 
 # Aliases
