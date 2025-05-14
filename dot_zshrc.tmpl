@@ -3,7 +3,13 @@
 # by james pullar
 #
 
+{{ if ne .chezmoi.os "darwin" }}
+export EDITOR="/usr/homebrew/"
+{{ end }}
+{{ if ne .chezmoi.os "linux" }}
 export EDITOR="/usr/bin/nvim"
+{{ end }}
+
 
 # Aliases
 source ~/.aliases
