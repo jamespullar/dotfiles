@@ -3,7 +3,6 @@
 # by james pullar
 #
 
-
 export EDITOR="/usr/bin/nvim"
 
 
@@ -72,8 +71,8 @@ path+=("$HOME/.nix-profile/bin")
 path+=("$(go env GOPATH)/bin")
 
 
-# .local/bin
-path+=("$HOME/.local/bin")
+# Local scripts
+path+=("$HOME/dev/scripts")
 
 
 # Configure fzf
