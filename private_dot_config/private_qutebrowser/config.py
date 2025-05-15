@@ -15,7 +15,7 @@ c.auto_save.session = True
 # 
 c.url.start_pages = ["qute://bookmarks/"]
 
-c.colors.webpage.darkmode.policy.images = "never"
+c.colors.webpage.darkmode.policy.images = "smart"
 
 # }}}
 
