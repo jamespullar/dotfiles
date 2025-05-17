@@ -4,7 +4,7 @@
 #
 
 export EDITOR="/usr/bin/nvim"
-export MANPAGER="less -R --use-color -Dd+r =Du+b"
+export MANPAGER="most"
 
 
 # Aliases
