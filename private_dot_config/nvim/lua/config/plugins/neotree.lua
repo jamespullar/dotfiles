@@ -10,6 +10,7 @@ return {
     config = function()
       require("neo-tree").setup({
         window = {
+          width = 30, -- Default is 40
           mappings = {
             ["P"] = {
               "toggle_preview",
