@@ -3,7 +3,12 @@
 # by james pullar
 #
 
+{{- if eq .chezmoi.hostname "rubix-desktop" }}
 export EDITOR="/usr/bin/nvim"
+{{ else if eq .chezmoi.hostname "rubix-laptop.local"}}
+export EDITOR="/opt/homebrew/bin/nvim"
+{{- end}}
+
 export MANPAGER="nvim +Man!"
 
 
