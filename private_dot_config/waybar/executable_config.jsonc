@@ -6,8 +6,7 @@
   "modules-right": ["network", "pulseaudio", "clock"],
   "clock": {
     "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "on-click": "gnome-calendar"
+    "on-click": "qutebrowser \":open https://calendar.google.com/calendar/u/0/r/month\""
   },
   "network": {
     "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",

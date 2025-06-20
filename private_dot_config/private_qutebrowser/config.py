@@ -17,6 +17,12 @@ c.url.start_pages = ["qute://bookmarks/"]
 
 c.colors.webpage.darkmode.policy.images = "never"
 
+c.url.searchengines = {
+    'DEFAULT': 'http://search.home/search?q={}'
+}
+
+c.scrolling.smooth = True
+
 # }}}
 
 

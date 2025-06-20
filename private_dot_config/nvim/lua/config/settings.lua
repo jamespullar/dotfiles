@@ -17,6 +17,9 @@ o.ruler = true
 o.wrap = false
 
 
+o.smoothscroll = true
+
+
 o.autoindent = true -- Match indent from current line when starting new lines
 o.smartindent = true
 o.shiftwidth = 4
