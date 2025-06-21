@@ -23,6 +23,12 @@ c.url.searchengines = {
 
 c.scrolling.smooth = True
 
+c.qt.force_software_rendering = 'none'
+c.content.webgl = False
+
+# Enable WebGL only for specific trusted sites
+config.set('content.webgl', True, '*://underscorecraft.com:8123/*')
+
 # }}}
 
 
