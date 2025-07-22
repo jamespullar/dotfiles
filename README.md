@@ -21,3 +21,9 @@ Once confirmed, then run:
 ```
 chezmoi apply
 ```
+
+## Wallpaper Management
+
+swww + waypaper
+
+![wallpaper selection](images/swww+waypaper.png)
