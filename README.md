@@ -22,8 +22,14 @@ Once confirmed, then run:
 chezmoi apply
 ```
 
+## Notification Management
+
+[SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)
+
+![notification center](images/swaync.png)
+
 ## Wallpaper Management
 
-swww + waypaper
+[swww](https://github.com/LGFae/swww) + [waypaper](https://github.com/anufrievroman/waypaper)
 
 ![wallpaper selection](images/swww+waypaper.png)
