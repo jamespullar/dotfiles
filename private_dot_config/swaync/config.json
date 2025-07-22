@@ -6,7 +6,7 @@
   "control-center-layer": "top",
   "layer-shell": true,
   "layer-shell-cover-screen": true,
-  "cssPriority": "application",
+  "cssPriority": "user",
   "control-center-margin-top": 0,
   "control-center-margin-bottom": 0,
   "control-center-margin-right": 0,
@@ -32,15 +32,6 @@
   "text-empty": "No Notifications",
   "script-fail-notify": true,
   "scripts": {
-    "example-script": {
-      "exec": "echo 'Do something...'",
-      "urgency": "Normal"
-    },
-    "example-action-script": {
-      "exec": "echo 'Do something actionable!'",
-      "urgency": "Normal",
-      "run-on": "action"
-    }
   },
   "notification-visibility": {
     "example-name": {

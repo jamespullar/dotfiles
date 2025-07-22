@@ -19,6 +19,8 @@ return {
           "lua",
           "vim",
           "query",
+          "hyprlang",
+          "latex",
         },
         auto_install = true,
 

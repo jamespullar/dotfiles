@@ -1,137 +1,144 @@
-@import "mocha.css"; 
 
 * {
-  font-size: 15px;
-  font-family: "Fira Sans Nerd Font";
-  background: none;
+    font-size:15px;
+    font-family: "CodeNewRoman Nerd Font Propo";
 }
 
 window#waybar {
-  background: @bg-alt-transparent;
-  color: @text;
+    all:unset;
+}
+
+.modules-left {
+    padding:7px;
+    margin:10 0 1 10;
+    border-radius:10px;
+    background: alpha(@background, .6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+
+.modules-center {
+    padding:7px;
+    margin:10 0 1 0;
+    border-radius:10px;
+    background: alpha(@background, .6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+
+.modules-right {
+    padding:7px;
+    margin: 10 10 1 0;
+    border-radius:10px;
+    background: alpha(@background, .6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+}
+
+tooltip {
+    background: rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    border: none;
+}
+
+menu {
+    background: rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    border: none;
+}
+
+#clock:hover, #custom-notification:hover {
+    transition: all .3s ease;
+}
+
+#custom-notification {
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color7;
+}
+
+#clock {
+    color: @color7;
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+#workspaces {
+    padding: 0px 5px;
 }
 
 #workspaces button {
-  border: 0;
+    all:unset;
+    padding: 0px 5px;
+    color: alpha(@color9,.4);
+    transition: all .2s ease;
 }
 
-#taskbar button.active {
-  background-color: @highlight;
+#workspaces button:hover {
+    color:rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
 }
 
 #workspaces button.active {
-  border-bottom: 5px solid @highlight;
+    color: @color9;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
 
-#custom-new-workspace {
-  font-size: 15px;
-}
-#custom-new-workspace:hover {
-  background-color: red;
-}
-
-#pulseaudio.on.active {
-  background-color: @highlight;
+#workspaces button.empty {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
 }
 
-@keyframes blink-critical {
-  40% {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  to {
-    background-color: @critical;
-  }
+#workspaces button.empty:hover {
+    color: rgba(0,0,0,0);
+    border: none;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+    transition: all 1s ease;
 }
 
-#pulseaudio.sink.muted {
-  color: @text;
-  background-color: @warning;
+#workspaces button.empty.active {
+    color: @color9;
+    border: none;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
 
-#pulseaudio.source.source-muted {
-  color: @text;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-name: blink-critical;
-  animation-duration: 0.5s;
+#group-expand {
+    padding: 0px 5px;
+    transition: all .3s ease; 
 }
 
-#tray * {
-  margin: 5px;
-  color: red;
+#custom-expand {
+    padding: 0px 5px;
+    color:alpha(@foreground,.2);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .7);
+    transition: all .3s ease; 
 }
 
-#custom-right-arrow,
-#custom-left-arrow {
-  padding: 8px 1px 1px 1px;
-  color: #bbffbb;
-}
-#custom-right-arrow,
-#custom-left-arrow,
-#custom-separator {
-  color: @highlight-dark;
+#custom-expand:hover {
+    color:rgba(255,255,255,.2);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
 }
 
-#temperature,
-#cpu,
-#memory,
-#disk {
-  padding: 3px 8px;
+#pulseaudio {
+    padding: 0px 5px;
 }
 
-#network {
-  font-size: 15;
+#pulseaudio:hover {
+    transition: all .3s ease; 
 }
 
-#custom-playerctl {
-  font-size: 15px;
+#tray {
+    padding: 0px 5px;
+    transition: all .3s ease; 
 }
 
-#pulseaudio.source {
-  font-size: 20px;
+#tray menu * {
+    padding: 0px 5px;
+    transition: all .3s ease; 
 }
 
-#custom-playerctl,
-#custom-new-workspace,
-#pulseaudio.source,
-#pulseaudio.sink,
-#network,
-#custom-notification,
-#yt-music,
-#workspaces button,
-#tray,
-#battery,
-#bluetooth,
-#clock,
-#battery,
-#taskbar {
-  padding: 3px 12px;
-  color: @text;
-}
-
-#network.disconnected,
-#battery.critical {
-  color: @critical;
-}
-#battery.charging {
-  color: @highlight;
-}
-
-.warning,
-.medium {
-  color: @warning;
-}
-
-.critical,
-.wtf {
-  color: @text;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-name: blink-critical;
-  animation-duration: 0.5s;
-}
-
-.high {
-  color: @critical;
+#tray menu separator {
+    padding: 0px 5px;
+    transition: all .3s ease; 
 }

@@ -66,6 +66,16 @@ return {
           },
         },
       })
+
+      -- Configure hyprls (Hyprlang language server)
+      lspconfig.hyprls.setup({
+          filetypes = { "hyprlang" },
+          root_dir = function(fname)
+              return require'lspconfig.util'.find_git_ancestor(fname) or vim.fn.getcwd()
+          end,
+          single_file_support = true,
+      })
+
     end,
   },
 }

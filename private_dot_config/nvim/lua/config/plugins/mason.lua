@@ -51,6 +51,7 @@ return {
     opts = {
       ensure_installed = {
         "gopls", -- Ensure gopls is installed
+        "hyprls" -- Ensure hyprls is installed
       },
       automatic_installation = true,
     },
