@@ -5,9 +5,7 @@ import os
 from urllib.request import urlopen
 
 
-# load your autoconfig
-config.load_autoconfig()
-
+config.load_autoconfig(True)
 
 # settings {{{
 
@@ -44,6 +42,9 @@ config.set('content.webgl', True, '*://alltrails.com/*')
 
 config.bind("<Ctrl-d>", "cmd-run-with-count 20 scroll down")
 config.bind("<Ctrl-u>", "cmd-run-with-count 20 scroll up")
+
+config.bind('gM', 'spawn --detach umpv {url}')
+config.bind('g/', 'hint links spawn --detach umpv {hint-url}')
 
 # }}}
 
