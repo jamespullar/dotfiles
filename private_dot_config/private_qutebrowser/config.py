@@ -21,7 +21,6 @@ c.url.searchengines = {
 }
 
 c.scrolling.smooth = True
-
 c.qt.force_software_rendering = 'none'
 c.content.webgl = False
 c.content.autoplay = False
@@ -48,7 +47,7 @@ config.bind('g/', 'hint links spawn --detach umpv {hint-url}')
 
 # }}}
 
-
+mpv --ytdl-format=best "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 # Load theme
 config.source('theme.py')
 

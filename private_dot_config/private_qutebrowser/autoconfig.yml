@@ -6,10 +6,6 @@
 
 config_version: 2
 settings:
-  bindings.commands:
-    global:
-      normal:
-        <Ctrl+/>: hint links spawn --detach mpv {hint-url}
   colors.webpage.bg:
     global: null
   colors.webpage.darkmode.enabled:
