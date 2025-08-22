@@ -47,7 +47,7 @@ config.bind('g/', 'hint links spawn --detach umpv {hint-url}')
 
 # }}}
 
-mpv --ytdl-format=best "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
 # Load theme
 config.source('theme.py')
 

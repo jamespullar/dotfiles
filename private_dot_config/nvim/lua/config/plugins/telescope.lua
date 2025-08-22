@@ -67,6 +67,8 @@ return {
               width = 0.87,
               height = 0.80,
               preview_cutoff = 120,
+              preview_width = 0.6,
+              preview_height = 0.4,
               prompt_position = "top",
             },
             vertical = {
@@ -160,9 +162,17 @@ return {
           -- Find files configuration
           find_files = {
             theme = "dropdown",
-            previewer = false,
+            previewer = true,
             hidden = false,
             find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+            layout_config = {
+              dropdown = {
+                width = 0.9,
+                height = 0.8,
+                preview_width = 0.6,
+                preview_height = 0.4,
+              }
+            }
           },
           
           -- Live grep configuration  

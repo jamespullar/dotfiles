@@ -11,6 +11,10 @@ export EDITOR="/opt/homebrew/bin/nvim"
 
 export MANPAGER="nvim +Man!"
 
+# Please Rewind
+export PLEASE_REWIND_CLIENT_ID="5555555555555555555"
+export PLEASE_REWIND_CLIENT_SECRET="mobileappheyoooo00oo00oo00oo00oo{rotatethis"
+
 
 # Aliases
 source ~/.aliases
@@ -85,7 +89,15 @@ path+=("$HOME/.nix-profile/bin")
 path+=("$(go env GOPATH)/bin")
 
 
+# QML
+path+=("/usr/lib/qt6/bin")
+
+
 # Configure fzf
 # https://github.com/junegunn/fzf
 eval "$(fzf --zsh)"
+
+# Configure zoxide
+# https://github.com/ajeetdsouza/zoxide
+eval "$(zoxide init zsh)"
 

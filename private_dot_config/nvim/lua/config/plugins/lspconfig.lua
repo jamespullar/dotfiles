@@ -75,7 +75,6 @@ return {
           end,
           single_file_support = true,
       })
-
     end,
   },
 }

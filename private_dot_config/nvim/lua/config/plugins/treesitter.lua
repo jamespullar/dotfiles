@@ -16,17 +16,23 @@ return {
           "gowork",
           "gosum",
           "gotmpl",
-          "lua",
-          "vim",
-          "query",
           "hyprlang",
+          "javascript",
           "latex",
+          "lua",
+          "qmljs",
+          "query",
+          "vim",
         },
         auto_install = true,
 
         -- Syntax highlighting
         highlight = {
           enable = true,
+        },
+
+        indent = {
+            enable = true,
         },
 
         textobjects = {
@@ -37,6 +43,9 @@ return {
           }
         },
       })
+
+      -- Add QML parser
+      vim.treesitter.language.register("javascript", "qml")
     end,
 }
 

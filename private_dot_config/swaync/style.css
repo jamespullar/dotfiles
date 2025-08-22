@@ -1,3 +1,4 @@
+@import 'colors.css';
 
 @define-color cc-bg rgba(46, 46, 46, 0.7);
 @define-color noti-border-color rgba(255, 255, 255, 0.15);
@@ -37,7 +38,7 @@
 
 .notification-row .notification-background .close-button {
   /* The notification Close Button */
-  background: @noti-close-bg;
+  background: @background;
   color: @text-color;
   text-shadow: none;
   padding: 0;
@@ -273,7 +274,7 @@
 
 .control-center {
   /* The Control Center which contains the old notifications + widgets */
-  background: @cc-bg;
+  background: @background;
   color: @text-color;
   border-radius: 12px;
   margin: 16px;

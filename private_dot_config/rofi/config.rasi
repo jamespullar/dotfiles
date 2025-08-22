@@ -1,3 +1,4 @@
+@import "colors.rasi"
 
 configuration {
     modi: "drun,run,filebrowser,window";
@@ -19,34 +20,6 @@ configuration {
  * Theme modifications
 **/
 
-@import "colors/tokyonight"
-
-* {
-    border-colour:               var(selected);
-    handle-colour:               var(selected);
-    background-colour:           var(background);
-    foreground-colour:           var(foreground);
-    alternate-background:        var(background-alt);
-    normal-background:           var(background);
-    normal-foreground:           var(foreground);
-    urgent-background:           var(urgent);
-    urgent-foreground:           var(background);
-    active-background:           var(active);
-    active-foreground:           var(background);
-    selected-normal-background:  var(selected);
-    selected-normal-foreground:  var(background);
-    selected-urgent-background:  var(active);
-    selected-urgent-foreground:  var(background);
-    selected-active-background:  var(urgent);
-    selected-active-foreground:  var(background);
-    alternate-normal-background: var(background);
-    alternate-normal-foreground: var(foreground);
-    alternate-urgent-background: var(urgent);
-    alternate-urgent-foreground: var(background);
-    alternate-active-background: var(active);
-    alternate-active-foreground: var(background);
-}
-
 window {
     transparency: "real";
     location: center;
@@ -62,7 +35,7 @@ window {
     padding: 0px;
     border: 0px solid;
     border-radius: 16px;
-    background-color: @background;
+    background-color: @primary;
     cursor: "default";
 }
 
@@ -120,7 +93,7 @@ listview {
     padding: 0px;
     border: 0px solid;
     background-color: transparent;
-    text-color: @foreground;
+    text-color: @surface;
     cursor: "default";
 }
 
@@ -138,33 +111,33 @@ element {
 }
 
 element normal.normal {
-    background-color: var(normal-background);
-    text-color: var(normal-foreground);
+    background-color: @on-primary-container;
+    text-color: @surface;
 }
 
 element normal.active {
-    background-color: var(active-background);
-    text-color: var(active-foreground);
+    background-color: @primary-container;
+    text-color: @surface;
 }
 
 element selected.normal {
-    background-color: var(selected-normal-background);
-    text-color: var(selected-normal-foreground);
+    background-color: @tertiary;
+    text-color: @surface;
 }
 
 element selected.active {
-    background-color: var(selected-active-background);
-    text-color: var(selected-active-foreground);
+    background-color: @on-tertiary;
+    text-color: @surface;
 }
 
 element alternate.normal {
-    background-color: var(alternate-normal-background);
-    text-color: var(alternate-normal-foreground);
+    background-color: @on-primary-container;
+    text-color: @surface;
 }
 
 element alternate.active {
-    background-color: var(alternate-active-background);
-    text-color: var(alternate-active-foreground);
+    background-color: @primary-container;
+    text-color: @surface;
 }
 
 element-icon {
@@ -190,20 +163,20 @@ mode-switcher {
     border: 0px solid;
     border-radius: 0px;
     background-color: transparent;
-    text-color: @foreground;
+    text-color: @surface;
 }
 
 button {
     padding: 5px 10px;
     border: 0px solid;
     border-radius: 10px;
-    background-color: @alternate-background;
+    background-color: @tertiary;
     text-color: inherit;
     cursor: pointer;
 }
 
 button selected {
-    background-color: var(selected-normal-background);
-    text-color: var(selected-normal-foreground);
+    background-color: @tertiary-fixed;
+    text-color: @surface;
 }
 
